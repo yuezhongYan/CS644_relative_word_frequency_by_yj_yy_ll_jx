@@ -4,10 +4,10 @@ document. On the AWS VM instances you created or on your laptop, do the followin
 1.	Develop a MapReduce-based approach in your Hadoop system to compute the relative frequencies of each word that occurs in all the documents in 100KWikiText.txt, and output the
 top 100 word pairs sorted in a decreasing order of relative frequency. Note that the relative frequency (RF) of word B given word A is defined as follows: 
 
-f(B|A) = count(A, B) / count(A) = count(A, B) / sum_up(B', count(A, B'))
+    f(B|A) = count(A, B) / count(A) = count(A, B) / sum_up(B', count(A, B'))
 
-where count(A,B) is the number of times A and B co-occur in the entire document collection, and count(A) is the number of times A occurs with anything else. Intuitively, given a 
-document collection, the relative frequency captures the proportion of time the word B appears in the same document as A.
+    where count(A,B) is the number of times A and B co-occur in the entire document collection, and count(A) is the number of times A occurs with anything else. Intuitively, 
+    given a document collection, the relative frequency captures the proportion of time the word B appears in the same document as A.
 
 Submission requirements:
 
