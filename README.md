@@ -12,11 +12,18 @@ document collection, the relative frequency captures the proportion of time the 
 Submission requirements:
 
 All the following files must be submitted in a zipped file:
+
   A commands.txt text file that lists all the commands you used to run your code and produce the required results in both pseudo and fully distributed modes
+  
   A top100.txt text file that stores the final results (only the top 100 word pairs sorted in a decreasing order of relative frequency)
+  
   The source code of your MapReduce solution (including the JAR file)
+  
   An algorithm.txt text file that describes the algorithm you used to solve the problem
+  
   A settings.txt text file that describes:
+  
     i) the input/output format in each Hadoop task, i.e., the keys for the mappers and reducers
+    
     ii) the Hadoop cluster settings you used, i.e., number of VM instances, number of mappers and reducers, etc.
 
