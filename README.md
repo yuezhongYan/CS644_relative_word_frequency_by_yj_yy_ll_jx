@@ -1,4 +1,5 @@
 # CS644_relative_word_frequency_by_yj_yy_ll_jx
+# final_project_description
 In this assignment, you will explore a set of 100,000 Wikipedia documents: 100KWikiText.txt, in which each line consists of the plain text extracted from an individual Wikipedia
 document. On the AWS VM instances you created or on your laptop, do the following:
 1.	Develop a MapReduce-based approach in your Hadoop system to compute the relative frequencies of each word that occurs in all the documents in 100KWikiText.txt, and output the
