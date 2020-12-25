@@ -1,0 +1,18 @@
+1. Format Hadoop cluster
+hadoop namenode -format
+
+2. Start Hadoop cluster
+start-dfs.sh (start-dfs.cmd in WIN10)
+start-yarn.sh (start-yarn.cmd in WIN10)
+
+3. Put input file 100KWikiText.txt into HDFS '/usr/yj/input'
+hdfs dfs -put 'dir from hard drive/100KWikiText.txt' /usr/yj/input
+
+4. Run Hadoop program
+hadoop jar 'dir from hard drive/TestWord.jar' wordFrequency.RelativeWordFrequencyTest /usr/yj/input/100KWikiText.txt /usr/yj/output/testword
+
+5. View the result
+hdfs dfs -cat /usr/yj/output/testword/part-r-00000
+
+6. Extract the result from HDFS
+hdfs dfs -get /usr/yj/output/testword/part-r-00000

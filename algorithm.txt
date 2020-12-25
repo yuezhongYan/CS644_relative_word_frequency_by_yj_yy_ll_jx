@@ -1,0 +1,10 @@
+1. LowerCaseWordPairMapper converts the line in to the lower case, writes the current word and the nearby word, and set the next word
+as *.
+2. RelaiveWordCountReducer handles the word with *.
+3. WordCombiner aggregates the word.
+4. WordPartitioner distributes key-value pairs to corresponding reducer.
+5. RelaiveWordCountReducer sums up the word count, calculates the relative frequency, writes to relative frequency output file, and
+sends to WordPairRelativeFrequencyMapper.
+6. WordPairRelativeFrequencyMapper receives relative frequency as keys and words as values.
+7. KeyComparator will sort based on descending order.
+8. TopWordsReducer writes top 100 words.

@@ -1,0 +1,33 @@
+i)
+LowerCaseWordPairMapper:
+Input key: LongWritable key
+Output key: The current and the neighbor word
+
+RelaiveWordCountReducer:
+Input key: WordWritable key
+Output key: WordWritable key
+
+WordPairRelativeFrequencyMapper:
+Input key: Object key
+Output key: Relative frequency for word pairs
+
+TopWordsReducer:
+Input key: DoubleWritable key
+Output key: Iterable word/word groups
+
+ii)
+Cluster:
+	Fully Distributed mode:
+		2 VM instance: 
+			aws ec2 instance: 1 core CPU; 1024MB RAM
+	Persudo mode:
+		1 WIN10 PC:
+			8 cores CPU; 16GB RAM
+
+Sofeware:
+	Hadoop 2.6.5
+	Java SE 1.8
+Mapreduce:
+	2 Mappers
+	2 Reducers
+
